@@ -1,4 +1,3 @@
-// التاريخ الحالي + 7 أيام
 const endDate = new Date();
 endDate.setDate(endDate.getDate() + 7);
 

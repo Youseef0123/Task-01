@@ -18,7 +18,7 @@
      <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 
     <!-- Style css links   -->
-     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/style.css?v=2">
 
  
 
@@ -45,7 +45,7 @@
      <div class="Nav__TogglerWrapper d-flex d-lg-none align-items-center ms-auto">
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <span class="navbar-toggler-icon w-100"></span>
   </button>
 
   <div class="Nav__MobileAvatar">
@@ -62,7 +62,7 @@
             <li class="nav-item">
                  
                  <form class="Nav__search__form" role="search">
-                   <img src="icons/HomeSection/search-sm.svg" class="Nav__search__form__icon" alt="search">
+                   <img src="icons/HomeSection/search-sm.svg" class="Nav__search__form__icon"  alt="search">
                    <input
                      type="search"
                      class="form-control Nav__search__form__input"
@@ -87,8 +87,8 @@
 
       <div class="d-flex justify-content-center Nav__Left_Navbar">
         
-         <Button class="btn btn-pro"> Upgrade to Pro</Button>
-         <Button class="btn btn-cert"> <img src="icons/HomeSection/award-01.svg" alt=""> Get Certified</Button>
+         <Button class="btn btn-pro "> Upgrade to Pro</Button>
+         <Button class="btn btn-cert"> <img src="images/HomeSection/award-01.svg" alt=""> Get Certified</Button>
 
          <div class="Nav__Left__Navbar__Avatar" >
            <img src="images/HomeSection/Avatar.png" alt="">
@@ -108,62 +108,64 @@
 
     <!-- ================ start of Home ========================= -->
 
-    <section class="competition p-5  " > 
-   <div class=" ">
-    <div class="row align-items-center">
-
-      <!-- Left Section -->
-      <div class="col-lg-6 col-md-12 col-sm-12 competition__content mt-5">
-        <button class="btn btn-pro btn__LiveNow mb-5"> <img src="icons/HomeSection/Ellipse 1178.svg"  alt=""> Live Now</button>
-        <h1 class="competition__title">CyberSprint 2024</h1>
-        <p class="competition__desc">
-          Race against the clock and cybersecurity experts worldwide in CyberSprint 2024,
-          the ultimate CTF challenge for those who dare to prove their skills.
-        </p>
-        <ul class="competition__features d-flex  ">
-          <li class="competition__features__item">DevSecOps</li>
-          <li class="competition__features__item">Azure</li>
-          <li class="competition__features__item">Cloud Computing</li>
-          <li class="competition__features__item">+3 more</li>
-          <li class="competition__features__item--bgNone"><img src="icons/HomeSection/Icon.svg" class="mr-2" alt=""> Intermediate</li>
-        </ul>
-        <button class="btn btn-pro  btn__Speeder mt-4"> <img src="icons/HomeSection/speedometer-03.svg" alt="">Start</button>
+   <section class="hero ">
+  <div class="hero__background"></div>
+   <div class=" hero__cyber-face"></div>
+  
+   <div class="hero__container">
+    <div class="hero__content">
+      <div class="hero__live-badge btn__LiveNow bg-white ">
+         Live Now
       </div>
-
-      <!-- Right Section: Countdown -->
-      <div class="col-lg-6 col-md-12 col-sm-12 competition__timer-box  d-flex flex-column mx-auto ">
-        <div class="competition__timer">
-          <div class="competition__timer__header">
-            <span class="competition__timer__label"><i class="fa-regular fa-calendar mr-2" style="color: #fff5f5;"></i>This Competition will end at</span>
-          </div>
-
-          <div class="competition__timer__content">
-            <div class="competition__timer__unit">
-              <div id="days" class="competition__timer__number">0</div>
-              <small class="competition__timer__text">Days</small>
-            </div>
-            <span class="competition__timer__separator">:</span>
-            <div class="competition__timer__unit">
-              <div id="hours" class="competition__timer__number">0</div>
-              <small class="competition__timer__text">Hours</small>
-            </div>
-            <span class="competition__timer__separator">:</span>
-            <div class="competition__timer__unit">
-              <div id="minutes" class="competition__timer__number">0</div>
-              <small class="competition__timer__text">Minutes</small>
-            </div>
-            <span class="competition__timer__separator">:</span>
-            <div class="competition__timer__unit">
-              <div id="seconds" class="competition__timer__number">0</div>
-              <small class="competition__timer__text">Seconds</small>
-            </div>
-          </div>
+      
+      <h1 class="hero__title">CyberSprint 2024</h1>
+      
+      <p class="hero__description">
+        Race against the clock and cybersecurity experts worldwide in CyberSprint 2024, the ultimate CTF challenge for those who dare to prove their skills.
+      </p>
+      
+      <div class="hero__tags">
+        <span class="hero__tag">DevSecOps</span>
+        <span class="hero__tag">Azure</span>
+        <span class="hero__tag">Cloud Computing</span>
+        <span class="hero__tag hero__tag--more">+3 more</span>
+        <span class="hero__tag hero__tag--level"><img src="icons/HomeSection/Icon.svg" alt=""> Intermediate</span>
+      </div>
+      
+      <button class="hero__start-btn ">
+          <img src="icons/HomeSection/speedometer-03.svg" alt=""> Start
+      </button>
+    </div>
+    
+    <div class="hero__timer">
+      <h2 class="hero__timer-title">
+        <img src="images/HomeSection/calendar.svg" alt=""> This Competition will end at
+      </h2>
+      
+      <div class="hero__countdown  ">
+        <div class="hero__time-unit">
+          <span class="hero__time-number" id="days">6</span>
+          <span class="hero__time-label">Days</span>
+        </div>
+        <span class="hero__time-separator">:</span>
+        <div class="hero__time-unit">
+          <span class="hero__time-number" id="hours">23</span>
+          <span class="hero__time-label">Hours</span>
+        </div>
+        <span class="hero__time-separator">:</span>
+        <div class="hero__time-unit">
+          <span class="hero__time-number" id="minutes">59</span>
+          <span class="hero__time-label">Minutes</span>
+        </div>
+        <span class="hero__time-separator">:</span>
+        <div class="hero__time-unit">
+          <span class="hero__time-number" id="seconds">6</span>
+          <span class="hero__time-label">Seconds</span>
         </div>
       </div>
-
     </div>
   </div>
-    </section>
+</section>
 
     <!-- ================ End of Home ========================= -->
 
@@ -193,19 +195,19 @@
 
 
         <section class="leader">
-          <h2 class="leader__title">Competition Overview</h2>
+          <h2 class="leader__title mb-3">Competition Overview</h2>
           <p class="leader__description">
             CyberSprint 2024 invites cybersecurity professionals from around the globe to tackle our meticulously designed CTF challenges. Spanning areas from network security to cryptanalysis, this competition is your chance to shine on a global stage.
 
           </p>
 
-          <h3 class="leader__subtitle mt-4">Preparation Tips</h3>
+          <h3 class="leader__subtitle mt-4 mb-3">Preparation Tips</h3>
           <p class="leader__tip">
              Review past CTF challenges, especially in network security and cryptanalysis. Familiarize yourself with common CTF tools and environments. Review past CTF challenges, especially in network security and cryptanalysis. Familiarize yourself with common CTF tools and environments.           </p>
           <p class="leader__tip">
              Review past CTF challenges, especially in network security and cryptanalysis. Familiarize yourself with common CTF tools and environments. Review past CTF challenges, especially in network security and cryptanalysis. Familiarize yourself with common CTF tools and environments.           </p>
 
-          <h4 class="leader__resources-title mt-4">Helpful resources</h4>
+          <h4 class="leader__resources-title mt-4 mb-3 ">Helpful resources</h4>
           <div class="resources">
 
             <div class="leader__resources__item  w-100 mb-2 d-flex align-items-center justify-content-between ">
@@ -241,7 +243,7 @@
             </div>
           </div>
 
-          <h4 class="leader__practice-title mt-4">Practice CTFs</h4>
+          <h4 class="leader__practice-title mt-4 mb-3">Practice CTFs</h4>
           <p class="leader__tip">
             Review past CTF challenges, especially in network security and cryptanalysis. Familiarize yourself with common CTF tools and environments. Review past CTF challenges, especially in network security and cryptanalysis. Familiarize yourself with common CTF tools and environments. 
 
@@ -454,7 +456,7 @@
                   <span>4</span>
                 </div>
 
-                <img src="images/leaderSection/hacker avatar1 3.svg" class="rounded-circle mr-3" width="45" />
+                <img src="images/leaderSection/hacker avatar1 3.svg" class="rounded-circle mr-3" width="60" />
 
                 <div class="d-flex flex-column">
                   <span class="fw-bold">Jackson</span>
@@ -467,7 +469,7 @@
 
               <div class="text-end">
                 <div class="fw-bold fs-5 d-flex justify-content-end">774</div>
-                <small class="text-muted">01hr : 45 min</small>
+                <small class="text-muted">01hr :60 min</small>
               </div>
             </div>
           </div>
@@ -481,7 +483,7 @@
                 <div class="diamond-number">
                   <span>5</span>
                 </div>
-                <img src="images/leaderSection/hacker avatar1 3.svg" class="rounded-circle mr-3" width="45" />
+                <img src="images/leaderSection/hacker avatar1 3.svg" class="rounded-circle mr-3" width="60" />
                 <div class="d-flex flex-column">
                   <span class="fw-bold">Jackson</span>
                   <div class="d-flex align-items-center gap-1">
@@ -507,7 +509,7 @@
                 <div class="diamond-number">
                   <span>6</span>
                 </div>
-                <img src="images/leaderSection/hacker avatar1 3.svg" class="rounded-circle mr-3" width="45" />
+                <img src="images/leaderSection/hacker avatar1 4.svg" class="rounded-circle mr-3" width="60" />
                 <div class="d-flex flex-column">
                   <span class="fw-bold">Jackson</span>
                   <div class="d-flex align-items-center gap-1">
@@ -532,7 +534,7 @@
                 <div class="diamond-number">
                   <span>7</span>
                 </div>
-                <img src="images/leaderSection/hacker avatar1 3.svg" class="rounded-circle mr-3" width="45" />
+                <img src="images/leaderSection/hacker avatar1 2.svg" class="rounded-circle mr-3" width="60" />
                 <div class="d-flex flex-column">
                   <span class="fw-bold">Jackson</span>
                   <div class="d-flex align-items-center gap-1">
@@ -574,11 +576,6 @@
 
 
        <div class="tab-content d-none leaderTable" data-tab="leaderboard">
-
-  
-          
-
-
 
         <div class=" container-fluid  leaderTable__cards   ">
 
