@@ -1,0 +1,129 @@
+
+.leadersection__leaderTable .row {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  justify-content: center;
+  gap: 15px;
+  align-items: stretch;
+}
+.leadersection__leaderTable__Card1, .leadersection__leaderTable__Card2, .leadersection__leaderTable__Card3 {
+  flex: 1 1 30%;
+  min-width: 250px;
+  max-width: 350px;
+  margin: 0 !important;
+}
+@media (max-width: 768px) {
+  .leadersection__leaderTable__Card1, .leadersection__leaderTable__Card2, .leadersection__leaderTable__Card3 {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-bottom: 15px !important;
+  }
+  .leadersection__leaderTable__Card1 .row, .leadersection__leaderTable__Card2 .row, .leadersection__leaderTable__Card3 .row {
+    flex-wrap: wrap !important;
+  }
+}
+.leadersection__leaderTable__Card1 {
+  position: relative;
+  border-radius: 25px;
+  padding: 1.5rem;
+  color: white;
+  z-index: 1;
+  background-color: #0e0e0e;
+}
+.leadersection__leaderTable__Card1::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(133.46deg, rgba(255, 170, 0, 0.5) 1.73%, rgba(0, 0, 0, 0.5) 46.65%);
+}
+.leadersection__leaderTable__Card1::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  background: linear-gradient(133.03deg, #FFAA00 2.33%, rgba(153, 153, 153, 0) 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+          mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  padding: 1.5px;
+}
+.leadersection__leaderTable__Card1 .leadersection__leaderTable__Card__top .leadersection__leaderTable__Card__top__content--img {
+  border: 3px solid #FFAA00;
+}
+.leadersection__leaderTable__Card2 {
+  position: relative;
+  border-radius: 25px;
+  padding: 1.5rem;
+  color: white;
+  z-index: 1;
+  background-color: #0e0e0e;
+}
+.leadersection__leaderTable__Card2::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(133.46deg, rgba(0, 168, 255, 0.5) 1.73%, rgba(0, 0, 0, 0.5) 46.65%);
+}
+.leadersection__leaderTable__Card2::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  background: linear-gradient(133.03deg, #00A8FF 2.33%, rgba(153, 153, 153, 0) 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+          mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  padding: 1.5px;
+}
+.leadersection__leaderTable__Card2 .leadersection__leaderTable__Card__top .leadersection__leaderTable__Card__top__content--img {
+  border: 3px solid #00A8FF;
+}
+.leadersection__leaderTable__Card3 {
+  position: relative;
+  border-radius: 25px;
+  padding: 1.5rem;
+  color: white;
+  z-index: 1;
+  background-color: #0e0e0e;
+}
+.leadersection__leaderTable__Card3::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(133.46deg, rgba(0, 214, 143, 0.5) 1.73%, rgba(0, 0, 0, 0.5) 46.65%);
+}
+.leadersection__leaderTable__Card3::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  background: linear-gradient(133.03deg, #00D68F 2.33%, rgba(153, 153, 153, 0) 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+          mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  padding: 1.5px;
+}
+.leadersection__leaderTable__Card3 .leadersection__leaderTable__Card__top .leadersection__leaderTable__Card__top__content--img {
+  border: 3px solid #00D68F;
+}/*# sourceMappingURL=style.css.map */

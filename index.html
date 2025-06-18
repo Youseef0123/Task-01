@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- Google Font 'Inter' -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+     
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap links -->
+     <link rel="stylesheet" href="css/bootstrap/all.min.css">
+     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+
+    <!-- Style css links   -->
+     <link rel="stylesheet" href="css/style.css">
+
+ 
+
+</head>
+<body>
+
+
+    <!-- ================= Start of NavBar ========================  -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-white Nav">
+
+  <div class="container-fluid">
+    <li class="nav-item dropdown navbar-nav  Nav__Dropdown ">
+          <a class="nav-link dropdown-toggle text-black " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Browse
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+    </li>
+
+     <div class="Nav__TogglerWrapper d-flex d-lg-none align-items-center ms-auto">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="Nav__MobileAvatar">
+    <img src="images/HomeSection/Avatar.png" alt="Avatar" />
+  </div>
+</div>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100  ">
+
+            <li class="nav-item">
+                 
+                 <form class="Nav__search__form" role="search">
+                   <img src="icons/HomeSection/search-sm.svg" class="Nav__search__form__icon" alt="search">
+                   <input
+                     type="search"
+                     class="form-control Nav__search__form__input"
+                     placeholder="Search for courses, learning paths, topics, and more..."
+                     aria-label="Search"
+                   />
+                 </form>
+             
+         
+         
+            </li>
+         
+             <!-- <li class="nav-item Nav__Link">
+               <a class="nav-link fw-semibold	" aria-disabled="false">Pricing </a>
+             </li> -->
+           
+            
+        </ul>
+
+
+      <!-- Buttons here  -->
+
+      <div class="d-flex justify-content-center Nav__Left_Navbar">
+        
+         <Button class="btn btn-pro"> Upgrade to Pro</Button>
+         <Button class="btn btn-cert"> <img src="icons/HomeSection/award-01.svg" alt=""> Get Certified</Button>
+
+         <div class="Nav__Left__Navbar__Avatar" >
+           <img src="images/HomeSection/Avatar.png" alt="">
+         </div>
+         
+         </div>
+
+
+    </div>
+
+
+   </div>
+    </nav>
+    <!-- ================= End of NavBar ========================  -->
+
+
+
+    <!-- ================ start of Home ========================= -->
+
+    <section class="competition p-5  " > 
+   <div class=" ">
+    <div class="row align-items-center">
+
+      <!-- Left Section -->
+      <div class="col-lg-6 col-md-12 col-sm-12 competition__content mt-5">
+        <button class="btn btn-pro btn__LiveNow mb-5"> <img src="icons/HomeSection/Ellipse 1178.svg"  alt=""> Live Now</button>
+        <h1 class="competition__title">CyberSprint 2024</h1>
+        <p class="competition__desc">
+          Race against the clock and cybersecurity experts worldwide in CyberSprint 2024,
+          the ultimate CTF challenge for those who dare to prove their skills.
+        </p>
+        <ul class="competition__features d-flex  ">
+          <li class="competition__features__item">DevSecOps</li>
+          <li class="competition__features__item">Azure</li>
+          <li class="competition__features__item">Cloud Computing</li>
+          <li class="competition__features__item">+3 more</li>
+          <li class="competition__features__item--bgNone"><img src="icons/HomeSection/Icon.svg" class="mr-2" alt=""> Intermediate</li>
+        </ul>
+        <button class="btn btn-pro  btn__Speeder mt-4"> <img src="icons/HomeSection/speedometer-03.svg" alt="">Start</button>
+      </div>
+
+      <!-- Right Section: Countdown -->
+      <div class="col-lg-6 col-md-12 col-sm-12 competition__timer-box  d-flex flex-column mx-auto ">
+        <div class="competition__timer">
+          <div class="competition__timer__header">
+            <span class="competition__timer__label"><i class="fa-regular fa-calendar mr-2" style="color: #fff5f5;"></i>This Competition will end at</span>
+          </div>
+
+          <div class="competition__timer__content">
+            <div class="competition__timer__unit">
+              <div id="days" class="competition__timer__number">0</div>
+              <small class="competition__timer__text">Days</small>
+            </div>
+            <span class="competition__timer__separator">:</span>
+            <div class="competition__timer__unit">
+              <div id="hours" class="competition__timer__number">0</div>
+              <small class="competition__timer__text">Hours</small>
+            </div>
+            <span class="competition__timer__separator">:</span>
+            <div class="competition__timer__unit">
+              <div id="minutes" class="competition__timer__number">0</div>
+              <small class="competition__timer__text">Minutes</small>
+            </div>
+            <span class="competition__timer__separator">:</span>
+            <div class="competition__timer__unit">
+              <div id="seconds" class="competition__timer__number">0</div>
+              <small class="competition__timer__text">Seconds</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+    </section>
+
+    <!-- ================ End of Home ========================= -->
+
+
+
+    
+    <!-- ===============Start of LeaderBoard ================== -->
+
+ <section class="leadersection  ">
+
+  
+  
+       <nav class="nav leader__tabs mb-4">
+         <a class="nav-link active" href="#" data-tab="info">Battleground Info</a>
+         <a class="nav-link" href="#" data-tab="score">My Score</a>
+         <a class="nav-link" href="#" data-tab="leaderboard">Leaderboard</a>
+       </nav>
+
+        <div class="leadersection--fluid my-container tab-content active" data-tab="info">
+
+
+         <div class="row  d-flex justify-content-between">
+
+          <!-- Left Panel -->
+          <div class="col-lg-6 col-md-12 col-sm-12 ">
+
+
+
+        <section class="leader">
+          <h2 class="leader__title">Competition Overview</h2>
+          <p class="leader__description">
+            CyberSprint 2024 invites cybersecurity professionals from around the globe to tackle our meticulously designed CTF challenges. Spanning areas from network security to cryptanalysis, this competition is your chance to shine on a global stage.
+
+          </p>
+
+          <h3 class="leader__subtitle mt-4">Preparation Tips</h3>
+          <p class="leader__tip">
+             Review past CTF challenges, especially in network security and cryptanalysis. Familiarize yourself with common CTF tools and environments. Review past CTF challenges, especially in network security and cryptanalysis. Familiarize yourself with common CTF tools and environments.           </p>
+          <p class="leader__tip">
+             Review past CTF challenges, especially in network security and cryptanalysis. Familiarize yourself with common CTF tools and environments. Review past CTF challenges, especially in network security and cryptanalysis. Familiarize yourself with common CTF tools and environments.           </p>
+
+          <h4 class="leader__resources-title mt-4">Helpful resources</h4>
+          <div class="resources">
+
+            <div class="leader__resources__item  w-100 mb-2 d-flex align-items-center justify-content-between ">
+              <div>
+              <img class="mr-3" src="icons/LeaderSection/book-open-01.svg" alt="">
+
+              <span class="">A Practical Introduction to Cloud Computing</span>
+             </div>
+
+             <img class="leader__resources__item--hover" src="icons/LeaderSection/Icon1.svg" alt="">
+            </div>
+
+            <div class="leader__resources__item  w-100 mb-2 d-flex align-items-center justify-content-between">
+                <div>
+              <img class="mr-3" src="icons/LeaderSection/book-open-01.svg" alt="">
+
+              <span>A Practical Introduction to Cloud Computing</span>
+             </div>
+
+             <img  class="leader__resources__item--hover" src="icons/LeaderSection/Icon1.svg" alt="">
+            </div>
+
+            <div class="leader__resources__item  w-100 mb-2 d-flex align-items-center justify-content-between">
+
+             <div>
+              <img class="mr-3" src="icons/LeaderSection/book-open-01.svg" alt="">
+
+              <span>A Practical Introduction to Cloud Computing</span>
+             </div>
+
+             <img class="leader__resources__item--hover" src="icons/LeaderSection/Icon1.svg" alt="">
+
+            </div>
+          </div>
+
+          <h4 class="leader__practice-title mt-4">Practice CTFs</h4>
+          <p class="leader__tip">
+            Review past CTF challenges, especially in network security and cryptanalysis. Familiarize yourself with common CTF tools and environments. Review past CTF challenges, especially in network security and cryptanalysis. Familiarize yourself with common CTF tools and environments. 
+
+          </p>
+
+
+          <div class="leader__Covidox d-flex justify-content-between mt-3 ">
+
+           <div class="leader__Covidox__left">
+
+                 <div class="leader__Covidox__left__title d-flex mb-3  ">
+                   <img class="mr-3   " src="icons/LeaderSection/Icon2.svg" alt="">
+                    <h3 class="">Covidox 2</h2>
+                 </div>
+     
+            
+                  <div class="leader__Covidox__left__buttons">
+                   <span class="badge  me-2">System Hacking</span>
+                   <span class="badge  me-2">Ethical Hacking</span>
+                   <span class="badge  me-2">Vulnerability Exploitation</span>
+            
+                  </div>
+              
+
+           </div>
+
+           <div class="leader__Covidox__right">
+            
+            <div class="leader__Covidox__right__Icon1">
+                <img src="icons/LeaderSection/bar-chart-square-02 (1).svg" alt="">
+                <small>Medium</small>
+
+            </div>
+
+            <div class="leader__Covidox__right__Icon2 mt-4">
+                <img src="icons/LeaderSection/clock.svg" alt="">
+                <small>1Hr</small>
+
+            </div>
+
+
+           </div>
+
+
+          </div>
+
+
+          <div class="leader__Covidox d-flex justify-content-between mt-3 ">
+
+           <div class="leader__Covidox__left">
+
+                 <div class="leader__Covidox__left__title d-flex mb-3  ">
+                   <img class="mr-3   " src="icons/LeaderSection/Icon2.svg" alt="">
+                    <h3 class="">Covidox 2</h2>
+                 </div>
+     
+            
+                  <div class="leader__Covidox__left__buttons">
+                   <span class="badge  me-2">System Hacking</span>
+                   <span class="badge  me-2">Ethical Hacking</span>
+                   <span class="badge  me-2">Vulnerability Exploitation</span>
+            
+                  </div>
+              
+
+           </div>
+
+           <div class="leader__Covidox__right">
+            
+            <div class="leader__Covidox__right__Icon1">
+                <img src="icons/LeaderSection/bar-chart-square-02 (1).svg" alt="">
+                <small>Medium</small>
+
+            </div>
+
+            <div class="leader__Covidox__right__Icon2 mt-4">
+                <img src="icons/LeaderSection/clock.svg" alt="">
+                <small>1Hr</small>
+
+            </div>
+
+
+           </div>
+
+
+          </div>
+
+          <div class="leader__Covidox d-flex justify-content-between mt-3 ">
+
+           <div class="leader__Covidox__left">
+
+                 <div class="leader__Covidox__left__title d-flex mb-3  ">
+                   <img class="mr-3   " src="icons/LeaderSection/Icon2.svg" alt="">
+                    <h3 class="">Covidox 2</h2>
+                 </div>
+     
+            
+                  <div class="leader__Covidox__left__buttons">
+                   <span class="badge  me-2">System Hacking</span>
+                   <span class="badge  me-2">Ethical Hacking</span>
+                   <span class="badge  me-2">Vulnerability Exploitation</span>
+            
+                  </div>
+              
+
+           </div>
+
+           <div class="leader__Covidox__right">
+            
+            <div class="leader__Covidox__right__Icon1">
+                <img src="icons/LeaderSection/bar-chart-square-02 (1).svg" alt="">
+                <small>Medium</small>
+
+            </div>
+
+            <div class="leader__Covidox__right__Icon2 mt-4">
+                <img src="icons/LeaderSection/clock.svg" alt="">
+                <small>1Hr</small>
+
+            </div>
+
+
+           </div>
+
+
+          </div>
+
+          
+        </section>
+
+
+          </div>
+
+          <!-- Right Panel -->
+          <div class="col-lg-5 col-md-10  col-sm-12 m-auto  ">
+
+        <section class="leaderboard card text-white   ">
+          <h4 class="leaderboard__title mb-5 text-center">Live Leaderboard</h4>
+
+          <!-- Top 3 -->
+          <div class="leaderboard__top d-flex justify-content-center text-center mt-5 mb-4">
+
+            
+            
+            <div class="leaderboard__item leaderboard__item--second">
+
+               <div class="leaderboard__item--second--border">
+                  <span class="leaderboard__item--number">2</span>
+                 <img src="images/leaderSection/hacker avatar1 4.svg" class="rounded-circle leaderboard__item__Avatar " width="60" />
+               </div>
+               
+                <div><h5>Jackson</h5></div>
+              <div class="leaderboard__item--second--Date"><p>1674</p></div>
+              <small>3hrs 49 mins</small><br />
+             <div class="d-flex justify-content-center align-items-center gap-1  mt-3">
+              <img src="images/leaderSection/US.svg" width="20"  class="mr-3" />
+              <p class="mb-0">USA</p>
+            </div>
+            </div>
+
+          
+            <div class="leaderboard__item leaderboard__item--first ">
+              <!-- <img src="images/leaderSection/hacker avatar1 2.svg" class="rounded-circle leaderboard__item__Avatar leaderboard__item--first--border  mb-1" width="60" /> -->
+
+               <div class="leaderboard__item--first--border">
+                  <span class="leaderboard__item--number ">1</span>
+                  <img class="crowen" src="icons/LeaderSection/Group 1.svg" alt="">
+                 <img src="images/leaderSection/hacker avatar1 2.svg" class="rounded-circle leaderboard__item__Avatar " width="70" />
+               </div>
+
+
+                   <div><h5>Jackson</h5></div>
+                  <div class="leaderboard__item--first--Date"><p>1674</p></div>
+                 <small>3hrs 49 mins</small><br />
+                <div class="d-flex justify-content-center align-items-center gap-1  mt-3">
+                 <img src="images/leaderSection/US.svg" width="20" class="mr-3" />
+                 <p class="mb-0">USA</p>
+                </div>            </div>
+
+                 <div class="leaderboard__item leaderboard__item--third">
+                    
+                    <div class="leaderboard__item--third--border">
+                       <span class="leaderboard__item--number">3</span>
+                      <img src="images/leaderSection/hacker avatar1 3.svg" class="rounded-circle leaderboard__item__Avatar " width="60" />
+                    </div>             
+                     <div><h5>Jackson</h5></div>
+                <div class="leaderboard__item--third--Date"><p>1674</p></div>
+               <small>3hrs 49 mins</small><br />
+
+
+                <div class="d-flex justify-content-center align-items-center gap-1  mt-3">
+                  <img src="images/leaderSection/US.svg" width="20" class="mr-3" />
+                  <p class="mb-0">USA</p>
+                </div>
+    
+            </div>
+
+
+
+
+          </div>
+
+          <!-- Other rankings -->
+         <div class="leaderboard__list ">
+            <!-- Entry -->
+            <div class="leaderboard__entry d-flex justify-content-between align-items-center mb-3 p-3 rounded">
+              <div class="d-flex align-items-center gap-3">
+
+                <div class="diamond-number">
+                  <span>4</span>
+                </div>
+
+                <img src="images/leaderSection/hacker avatar1 3.svg" class="rounded-circle mr-3" width="45" />
+
+                <div class="d-flex flex-column">
+                  <span class="fw-bold">Jackson</span>
+                  <div class="d-flex align-items-center gap-1">
+                    <img src="icons/LeaderSection/NE.svg" alt="India Flag" width="16" />
+                    <small class="text-muted ">India</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-end">
+                <div class="fw-bold fs-5 d-flex justify-content-end">774</div>
+                <small class="text-muted">01hr : 45 min</small>
+              </div>
+            </div>
+          </div>
+
+
+         <div class="leaderboard__list ">
+            <!-- Entry -->
+            <div class="leaderboard__entry d-flex justify-content-between align-items-center mb-3 p-3 rounded">
+              <div class="d-flex align-items-center gap-3">
+
+                <div class="diamond-number">
+                  <span>5</span>
+                </div>
+                <img src="images/leaderSection/hacker avatar1 3.svg" class="rounded-circle mr-3" width="45" />
+                <div class="d-flex flex-column">
+                  <span class="fw-bold">Jackson</span>
+                  <div class="d-flex align-items-center gap-1">
+                    <img src="icons/LeaderSection/NE.svg" alt="India Flag" width="16" />
+                    <small class="text-muted">India</small>
+                  </div>
+                </div>
+              </div>
+              <div class="text-end">
+                <div class="fw-bold fs-5 d-flex justify-content-end">774</div>
+                <small class="text-muted">01hr : 45 min</small>
+              </div>
+            </div>
+          </div>
+
+
+
+         <div class="leaderboard__list ">
+            <!-- Entry -->
+            <div class="leaderboard__entry d-flex justify-content-between align-items-center mb-3 p-3 rounded">
+              <div class="d-flex align-items-center gap-3">
+
+                <div class="diamond-number">
+                  <span>6</span>
+                </div>
+                <img src="images/leaderSection/hacker avatar1 3.svg" class="rounded-circle mr-3" width="45" />
+                <div class="d-flex flex-column">
+                  <span class="fw-bold">Jackson</span>
+                  <div class="d-flex align-items-center gap-1">
+                    <img src="icons/LeaderSection/NE.svg" alt="India Flag" width="16" />
+                    <small class="text-muted">India</small>
+                  </div>
+                </div>
+              </div>
+              <div class="text-end">
+                <div class="fw-bold fs-5 d-flex justify-content-end">774</div>
+                <small class="text-muted">01hr : 45 min</small>
+              </div>
+            </div>
+          </div>
+
+
+         <div class="leaderboard__list border-rounded ">
+            <!-- Entry -->
+            <div class="leaderboard__entry d-flex justify-content-between align-items-center mb-3 p-3 rounded">
+              <div class="d-flex align-items-center gap-3">
+
+                <div class="diamond-number">
+                  <span>7</span>
+                </div>
+                <img src="images/leaderSection/hacker avatar1 3.svg" class="rounded-circle mr-3" width="45" />
+                <div class="d-flex flex-column">
+                  <span class="fw-bold">Jackson</span>
+                  <div class="d-flex align-items-center gap-1">
+                    <img src="icons/LeaderSection/NE.svg" alt="India Flag" width="16" />
+                    <small class="text-muted">India</small>
+                  </div>
+                </div>
+              </div>
+              <div class="text-end">
+                <div class="fw-bold fs-5 d-flex justify-content-end">774</div>
+                <small class="text-muted">01hr : 45 min</small>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn btn-outline-light w-100 mt-3 btn-Leaderboard">Check Full Leaderboard</button>
+
+        </section>
+
+        <!-- Topics -->
+        <div class="topics mt-4">
+          <h5 class="topics__title">Topics:</h5>
+          <span class="badge  me-2">DevSecOps</span>
+          <span class="badge  me-2">Azure</span>
+          <span class="badge  me-2">Cloud Computing</span>
+          <span class="badge ">Jenkins</span>
+        </div>
+
+
+
+          </div>
+
+        </div>
+       
+      
+      
+      
+       </div>
+
+
+       <div class="tab-content d-none leaderTable" data-tab="score">
+
+  
+          
+
+
+
+        <div class=" container-fluid  leaderTable__cards   ">
+
+          <div class="leaderTable__cards__top3">
+              <img  src="images/leaderSection/Top3users.png" alt="">
+          </div>
+
+          <div class=" row mb-4  ">
+
+            <div class="  col-sm-12 leaderTable__Card1 ml-4  p-4">
+
+              
+
+              <div class="leaderTable__Card__top  d-flex justify-content-between pb-4 ">
+
+                <div class="d-flex  leaderTable__Card__top__content ">
+
+                    <div class="position-relative d-inline-block">
+
+                      <img class="rounded-circle w-100 leaderTable__Card__top__content--img1 " 
+                            src="images/leaderSection/hacker avatar1 2.svg" alt="">
+                     
+                       <img class="Crowen position-absolute" 
+                            src="icons/LeaderSection/Group 1.svg" 
+                            style="top: -10px; left: 50%; width: 70%; transform: translateY(-80%) translateX(-50%);">
+                     </div>
+
+
+                  <div class="ml-3" >
+                    <h6 class="mt-3 ">Eden</h6>
+
+                    <div class=" ">
+                      <img class="" src="images/leaderSection/US.svg" alt="">
+                      <small >USA</small>
+                    </div>
+
+                  </div>
+               </div>
+
+               <h6 class="mt-3 leaderTable__Card__top--number  leaderTable__Card1--Yellow ">#1</h6>
+
+
+              </div>
+
+              <div class="leaderTable__Card__mid d-flex justify-content-between ">
+                <h6>Score</h6>
+                <span class="leaderTable__Card1--score ">1686</span>
+
+              </div>
+
+              <hr>
+
+              <div class="leaderTable__Card__low d-flex justify-content-between">
+                <h6>Time</h6>
+                <span>01hr :30 min</span>
+
+              </div>
+
+
+            </div>
+
+    
+
+            <div class=" col-sm-12 leaderTable__Card2 ml-4   p-4">
+
+              <div class="leaderTable__Card__top  d-flex justify-content-between pb-4 ">
+
+                <div class="d-flex  leaderTable__Card__top__content ">
+
+                    <div class="position-relative d-inline-block">
+
+                      <img class="rounded-circle w-100 leaderTable__Card__top__content--img2" 
+                            src="images/leaderSection/hacker avatar1 2.svg" alt="">
+                     
+
+                            <img class="Crowen position-absolute" 
+                            src="icons/LeaderSection/Crowen2.svg" 
+                            style="top: -10px; left: 50%; width: 70%; transform: translateY(-80%) translateX(-50%);">
+                     </div>
+
+
+                  <div class="ml-3" >
+                    <h6 class="mt-3 ">Eden</h6>
+
+                    <div class=" ">
+                      <img class="" src="images/leaderSection/US.svg" alt="">
+                      <small >USA</small>
+                    </div>
+
+                  </div>
+               </div>
+
+               <h6 class="mt-3 leaderTable__Card__top--number  leaderTable__Card2--blue">#2</h6>
+
+
+              </div>
+
+              <div class="lleaderTable__Card__mid d-flex justify-content-between ">
+                <h6>Score</h6>
+                <span class="leaderTable__Card2--score">1686</span>
+
+              </div>
+
+              <hr>
+
+              <div class="lleaderTable__Card__low d-flex justify-content-between">
+                <h6>Time</h6>
+                <span>01hr :30 min</span>
+
+              </div>
+
+
+            </div>
+
+    
+
+            <div class=" col-sm-12 leaderTable__Card3 ml-4  p-4">
+
+              <div class="leaderTable__Card__top  d-flex justify-content-between pb-4 ">
+
+                <div class="d-flex  leaderTable__Card__top__content ">
+
+                    <div class="position-relative d-inline-block">
+
+                      <img class="rounded-circle w-100 leaderTable__Card__top__content--img3" 
+                            src="images/leaderSection/hacker avatar1 2.svg" alt="">
+                     
+
+                            <img class="Crowen position-absolute" 
+                            src="icons/LeaderSection/Crowen3.svg" 
+                            style="top: -10px; left: 50%; width: 70%; transform: translateY(-80%) translateX(-50%);">
+                     </div>
+
+
+                  <div class="ml-3" >
+                    <h6 class="mt-3 ">Eden</h6>
+
+                    <div class=" ">
+                      <img class="" src="images/leaderSection/US.svg" alt="">
+                      <small >USA</small>
+                    </div>
+
+                  </div>
+               </div>
+
+               <h6 class="mt-3 leaderTable__Card__top--number leaderTable__Card3--green">#3</h6>
+
+
+              </div>
+
+              <div class="lleaderTable__Card__mid d-flex justify-content-between ">
+                <h6>Score</h6>
+                <span class="leaderTable__Card3--score" >1686</span>
+
+              </div>
+
+              <hr>
+
+              <div class="lleaderTable__Card__low d-flex justify-content-between">
+                <h6>Time</h6>
+                <span>01hr :30 min</span>
+
+              </div>
+
+
+            </div>
+
+
+          </div>
+
+          <h3 class="mt-4 mb-5 leaderTable__table__title ">Live challenge rank </h3>
+
+             <div class="table-responsive" style="border-radius: 15px; overflow: hidden;">
+                   <table class="table leaderTable--table  table-borderless text-center" style="color: white; width: 100%; border-spacing: 0 2px; border-collapse: separate;">
+                     <thead class="leaderTable--header">
+                       <tr leaderTable--header>
+                         <th>Rank</th>
+                         <th>User name</th>
+                         <th>Country</th>
+                         <th>Score</th>
+                         <th>Spending time</th>
+                         <th>Date</th>
+                       </tr>
+                        <tr>
+                          <td colspan="6" style="height: 1px; padding: 0; border: none;
+                            background: linear-gradient(90deg, #FFFFFF 0%, #868686 18.5%, #000000 100%);">
+                          </td>
+                        </tr>
+                     </thead>
+                     <tbody>
+                      
+                       <tr class="leaderTable--table--yellow leaderTable--row-hover ">
+                         <td class="leaderTable--table--1" >
+                          #1 
+                          
+                        </td>
+                         <td class="leaderTable--table--avatar leaderTable--table--avatar1"><img src="images/leaderSection/hacker avatar1 2.svg" width="30"><span style="color: gold;">Eden</span></td>
+                         <td>  <img src="images/leaderSection/US.svg" class="mr-2" alt=""> USA</td>
+                         <td>1686</td>
+                         <td>01hr :30 min</td>
+                         <td>10, Sep, 2024</td>
+                       </tr>
+
+
+
+                       <tr class="leaderTable--table--blue leaderTable--row-hover">
+                         <td class="leaderTable--table--2">#2 </td>
+                         <td class="leaderTable--table--avatar leaderTable--table--avatar2"><img src="images/leaderSection/hacker avatar1 2.svg" width="30"><span style="color: #00bfff;">Eden</span></td>
+                         <td> <img src="images/leaderSection/US.svg" class="mr-2" alt=""> USA</td>
+                         <td>1686</td>
+                         <td>01hr :30 min</td>
+                         <td>10, Sep, 2024</td>
+                       </tr>
+                       <tr class="leaderTable--table--green leaderTable--row-hover ">
+                         <td class="leaderTable--table--3">#3</td>
+                         <td class="leaderTable--table--avatar leaderTable--table--avatar3"><img src="images/leaderSection/hacker avatar1 2.svg" width="30"><span style="color: #00ff00;">Eden</span></td>
+                         <td> <img src="images/leaderSection/US.svg" class="mr-2" alt=""> USA</td>
+                         <td>1686</td>
+                         <td>01hr :30 min</td>
+                         <td>10, Sep, 2024</td>
+                       </tr>
+                       <tr class="leaderTable--row-hover">
+                         <td>#4</td>
+                         <td class="leaderTable--table--avatar"><img src="images/leaderSection/hacker avatar1 2.svg" width="30">Eden</td>
+                         <td> <img src="images/leaderSection/US.svg" class="mr-2" alt=""> USA</td>
+                         <td>1686</td>
+                         <td>01hr :30 min</td>
+                         <td>10, Sep, 2024</td>
+                       </tr>
+                       <tr class="leaderTable--row-hover">
+                         <td>#5</td>
+                         <td class="leaderTable--table--avatar"><img src="images/leaderSection/hacker avatar1 2.svg" width="30">Eden</td>
+                         <td> <img src="images/leaderSection/US.svg" class="mr-2" alt=""> USA</td>
+                         <td>1686</td>
+                         <td>01hr :30 min</td>
+                         <td>10, Sep, 2024</td>
+                       </tr>
+                       <tr class="leaderTable--row-hover" >
+                         <td>#6</td>
+                         <td class="leaderTable--table--avatar"><img src="images/leaderSection/hacker avatar1 2.svg" width="30">Eden</td>
+                         <td> <img src="images/leaderSection/US.svg" class="mr-2" alt=""> USA</td>
+                         <td>1686</td>
+                         <td>01hr :30 min</td>
+                         <td>10, Sep, 2024</td>
+                       </tr>
+                       <tr class="leaderTable--row-hover" >
+                         <td>#7</td>
+                         <td class="leaderTable--table--avatar"><img src="images/leaderSection/hacker avatar1 2.svg" width="30">Eden</td>
+                         <td> <img src="images/leaderSection/US.svg" class="mr-2" alt=""> USA</td>
+                         <td>1686</td>
+                         <td>01hr :30 min</td>
+                         <td>10, Sep, 2024</td>
+                       </tr>
+                       <tr class="leaderTable--row-hover" >
+                         <td>#8</td>
+                         <td class="leaderTable--table--avatar"><img src="images/leaderSection/hacker avatar1 2.svg" width="30">Eden</td>
+                         <td> <img src="images/leaderSection/US.svg" class="mr-2" alt=""> USA</td>
+                         <td>1686</td>
+                         <td>01hr :30 min</td>
+                         <td>10, Sep, 2024</td>
+                       </tr>
+                       <tr class="leaderTable--row-hover" >
+                         <td>#9</td>
+                         <td class="leaderTable--table--avatar"><img src="images/leaderSection/hacker avatar1 2.svg" width="30">Eden</td>
+                         <td> <img src="images/leaderSection/US.svg" class="mr-2" alt=""> USA</td>
+                         <td>1686</td>
+                         <td>01hr :30 min</td>
+                         <td>10, Sep, 2024</td>
+                       </tr>
+                       <tr class="leaderTable--row-hover" >
+                         <td>#10</td>
+                         <td class="leaderTable--table--avatar"><img src="images/leaderSection/hacker avatar1 2.svg" width="30">Eden</td>
+                         <td> <img src="images/leaderSection/US.svg" class="mr-2" alt=""> USA</td>
+                         <td>1686</td>
+                         <td>01hr :30 min</td>
+                         <td>10, Sep, 2024</td>
+                       </tr>
+                      
+                     </tbody>
+                   </table>
+              </div>
+
+
+        </div>
+
+
+       </div>
+
+
+
+
+
+
+
+        <div class="tab-content d-none" data-tab="leaderboard">
+  
+            <div class="score-card ">
+              <div class="score-card__header">
+                <img src="images/leaderSection/hacker avatar1 3.svg" alt="User" class="score-card__avatar" />
+                <h2 class="score-card__name">Mark Edin</h2>
+                <p class="score-card__time">Start Time: 3:00pm GMT | Submitted Time: 3:00pm GMT</p>
+              </div>
+            
+              <div class="score-card__chart">
+                <canvas id="scoreChart" width="150" height="150"></canvas>
+                <p class="score-card__score-text"><span>186</span>/200<br />Total Score</p>
+              </div>
+            
+              <div class="score-card__info">
+                <div class="score-card__status score-card__status--pass">Pass</div>
+                <div class="score-card__item"><span>Median Score</span>40</div>
+                <div class="score-card__item"><span>Rank</span>40</div>
+                <div class="score-card__item"><span>Time Spent</span>1h : 30m</div>
+                <div class="score-card__item"><span>Average Time Spent</span>1h : 30m</div>
+              </div>
+            </div>
+
+        
+        </div>
+
+
+
+
+
+
+</section>
+
+    <!-- ===============Start of LeaderBoard ================== -->
+
+
+
+    <!-- ==============start of Rules and Scoring=====================  -->
+         <section class="rules mt-5  tab-content" data-tab="info" >
+  <div class="rules__container">
+    <h2 class="rules__title">Rules and Scoring</h2>
+    <div class="rules__cards">
+      <div class="rules__card">
+        <h3 class="rules__card-title">Rules Overview</h3>
+        <p class="rules__card-text">
+          Participants must solve as many challenges as possible within the given time. Each challenge carries points based on difficulty. Collaboration between competitors is prohibited.
+        </p>
+      </div>
+      <div class="rules__card">
+        <h3 class="rules__card-title">Scoring System</h3>
+        <p class="rules__card-text">
+          Automated tools are restricted, all work must be the original effort of the participant. Violations will result in disqualification. Points are awarded based on the speed and accuracy of the solutions. High-value challenges have higher points but typically require more complex solutions.
+        </p>
+      </div>
+      <div class="rules__card">
+        <h3 class="rules__card-title">Fair Play Policy</h3>
+        <p class="rules__card-text">
+          Automated tools are restricted; all work must be the original effort of the participant. Violations will result in disqualification.
+        </p>
+      </div>
+    </div>
+  </div>
+         </section>
+    <!-- ==============start of Rules and Scoring=====================  -->
+
+
+
+    <!-- ============== start of Frequently asked questions -->
+
+    <section class="faq tab-content" data-tab="info">
+  <div class="faq__container">
+    <h2 class="faq__title">Frequently asked questions</h2>
+    <p class="faq__subtitle">Everything you need to know about the product and billing.</p>
+
+    <div class="faq__list">
+      <div class="faq__item faq__item--active">
+        <button class="faq__question">
+          <span>Is there a free trial available?</span>
+          <span class="faq__icon"><img src="icons/QuestionSection/Icon wrap1.svg" alt=""></span>
+        </button>
+        <div class="faq__answer">
+          Yes, you can try us for free for 30 days. If you want, we’ll provide
+          you with a free, personalized 30-minute onboarding call to get you
+          up and running as soon as possible.
+        </div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__question">
+          <span>Can I change my plan later?</span>
+          <span class="faq__icon"><img src="icons/QuestionSection/Icon wrap.svg" alt=""></span>
+        </button>
+        <div class="faq__answer">Yes, you can change it at any time.</div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__question">
+          <span>What is your cancellation policy?</span>
+          <span class="faq__icon"><img src="icons/QuestionSection/Icon wrap.svg" alt=""></span>
+        </button>
+        <div class="faq__answer">You can cancel anytime from your dashboard.</div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__question">
+          <span>How does billing work?</span>
+          <span class="faq__icon"><img src="icons/QuestionSection/Icon wrap.svg" alt=""></span>
+        </button>
+        <div class="faq__answer">Billing occurs monthly based on your plan.</div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__question">
+          <span>How do I change my account email?</span>
+          <span class="faq__icon"><img src="icons/QuestionSection/Icon wrap.svg" alt=""></span>
+        </button>
+        <div class="faq__answer">You can change it from your account settings.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+     <!-- ============== end of Frequently asked questions -->
+
+
+
+
+
+     <!-- ========footer ======-->
+
+     <footer class="footer text-center text-white py-4" data-tab="info">
+        <p class="footer__text mb-0">Copyrights © 2020 EC Council International Ltd.</p>
+     </footer>
+
+     <!-- ======== end footer===== -->
+
+
+
+       
+      <section id="score" class="tab-content">
+         <h2>My Score</h2>
+         <p>the content is here</p>
+       </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scribt.js"></script>
+</body>
+</html>

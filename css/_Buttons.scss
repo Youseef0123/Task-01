@@ -1,0 +1,125 @@
+@import "_variables.scss";
+
+$btn-radius: 0.75rem;
+$btn-padding-y: 0.625rem; 
+$btn-padding-x: 1.5rem;   
+$btn-font-weight: 600;
+$btn-font-size: 1rem;     
+$btn-gap: 0.5rem;
+
+// Buttons
+.btn-custom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: $btn-radius;
+  padding: $btn-padding-y $btn-padding-x;
+  font-weight: $btn-font-weight;
+  font-size: $btn-font-size;
+  gap: $btn-gap;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  line-height: 1.25;
+  white-space: nowrap;
+
+  svg, i, img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+
+  img {
+    display: inline-block;
+  }
+
+}
+
+
+.btn-pro {
+  @extend .btn-custom;
+  background-color: $primary-color;
+  color: $text-color;
+  margin-right: 10px;
+
+  &:hover {
+    background-color: #3b3b3b;
+    color: $text-color;
+  }
+}
+
+.btn-cert {
+  @extend .btn-custom;
+  background-color: $secondary-color;
+  color: $text-color;
+  margin-right: 10px;
+
+  &:hover {
+    background-color: #6d0808;
+    color: $text-color;
+  }
+}
+
+.btn__LiveNow {
+  background-color: $text-color;
+  color: $secondary-color;
+  font-weight: 400;
+  padding: 0.4rem 1.5rem;
+  border-radius: 1.5rem;
+  border: none;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  transition: background-color 0.3s;
+
+  img {
+    width: 10px !important;
+  }
+
+  &:hover {
+    background-color: #1a1a1a;
+  }
+
+  // Mobile responsive
+  @media (max-width: $breakpoint-mobile) {
+    padding: 0.3rem 1.2rem;
+    font-size: 0.9rem;
+    margin-bottom: 1rem !important;
+
+    img {
+      width: 8px !important;
+    }
+  }
+}
+
+.btn__Speeder {
+  padding: 10px 90px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  background-color: $text-color !important;
+  color: $primary-color;
+  margin-top: 0px;
+
+  &:hover {
+    background-color: #afacac;
+    color: $primary-color;
+  }
+
+  // Mobile responsive
+  @media (max-width: $breakpoint-mobile) {
+    padding: 8px 60px;
+    font-size: 1rem;
+    margin-top: 1rem !important;
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+
+.btn-Leaderboard{
+  @extend .btn-pro;
+  background-color: $text-color;
+  color: $primary-color;
+}
