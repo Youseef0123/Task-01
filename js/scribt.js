@@ -50,16 +50,15 @@ document.querySelectorAll('.nav-link').forEach(tab => {
 
 
 
-
 const canvas = document.getElementById('scoreChart');
 const ctx = canvas.getContext('2d');
 
 // Create the gradient manually (top to bottom)
 const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
-gradient.addColorStop(0, '#FFFFFF');  
-gradient.addColorStop(1, '#858585');   
+gradient.addColorStop(0, '#FFFFFF');   
+gradient.addColorStop(1, '#858585');     
 
-const score = 186;
+const score = 150;
 const maxScore = 200;
 
 const chart = new Chart(ctx, {
@@ -67,9 +66,13 @@ const chart = new Chart(ctx, {
   data: {
     datasets: [{
       data: [score, maxScore - score],
-      backgroundColor: [gradient, '#2c2c2c'], // Apply gradient here
+      backgroundColor: [gradient, '#2c2c2c'],
       borderWidth: 0,
-      cutout: '90%' 
+      cutout: '90%',
+      borderRadius: [
+        { outerStart: 10, outerEnd: 10, innerStart: 10, innerEnd: 10 }, // للجزء الأول (المملوء)
+        { outerStart: 0, outerEnd: 0, innerStart: 0, innerEnd: 0 }      // للجزء الثاني (الفاضي)
+      ]
     }]
   },
   options: {
@@ -84,6 +87,3 @@ const chart = new Chart(ctx, {
     }
   }
 });
-
-
-
