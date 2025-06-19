@@ -283,6 +283,86 @@ body {
     }
   }
 }
+//for  (600 to 800)
+@media (min-width: 600px) and (max-width:800px) {
+  .Nav {
+
+       .navbar-toggler {
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      background-color: #1F1F1F;
+      width: 40px;
+      height: 40px;
+      padding: 0.4rem;
+      border-radius: 8px;
+      border: none;
+    }
+
+    .navbar-toggler-icon {
+      width: 24px;
+      height: 24px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.95)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .collapse.navbar-collapse {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+      gap: 1rem;
+      background-color: #fff; 
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      border-radius: 10px;
+      margin-top: 0.5rem;
+
+      ul.navbar-nav {
+        flex-direction: column;
+        width: 100%;
+
+        li.nav-item {
+          width: 100%;
+          margin-bottom: 0.5rem;
+
+          a, form {
+            width: 100%;
+          }
+        }
+      }
+
+      .Nav__Left_Navbar {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        gap: 0.8rem;
+
+        button {
+          width: 100%;
+        }
+
+        .Nav__Left__Navbar__Avatar {
+          margin-top: 0.5rem;
+
+          img {
+            display: none;
+            width: 40px;
+            height: 40px;
+          }
+          &::before{
+            display: none;
+          }
+        }
+
+        &__MobileAvatar{
+          width: 50%;
+          margin-inline-start: auto;
+        }
+      }
+    }
+  }
+}
 
 
 
@@ -302,6 +382,10 @@ body {
   }
 
   @media (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet-max) {
+    display: block;
+    margin-left: 0.5rem;
+  }
+  @media (min-width: 600px) and (max-width: 800px) {
     display: block;
     margin-left: 0.5rem;
   }
@@ -604,6 +688,26 @@ body {
   @media (min-width: $desktop) {
     padding: 30px 40px;
   }
+
+    @media  (min-width: 600px) and (max-width: 800px){
+      .nav {
+      margin-left: 20px;
+      .nav-link{
+        font-size: 1rem;
+      }
+    }
+     }
+
+  .leader{
+
+      
+     @media  (min-width: 600px) and (max-width: 800px){
+        padding-left: 20px !important;
+     }
+
+
+
+  }
   
   .container-fluid {
     max-width: 100%;
@@ -630,11 +734,20 @@ body {
 
   
   &__tabs {
-   display: flex;
-    gap: 0.5rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
-    justify-content: flex-start;
+  display: flex;
+  gap: 0.5rem;
+  position: relative;
+  justify-content: flex-start;
 
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%; // هنا العرض بتاع الخط
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
   .nav-link {
     padding: 8px 12px;
     font-size: 1rem;
@@ -646,7 +759,7 @@ body {
 
   @media  (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet-max) {
     .nav-link {
-      font-size: 1.2rem;
+      font-size: 1rem;
       margin-top:0px !important ;
     }
   }
@@ -657,6 +770,9 @@ body {
       font-size: .9rem;
     }
   }
+
+
+
     a {
       color: $text-color;
       text-decoration: none;
@@ -694,6 +810,7 @@ body {
   &__description ,&__tip{
     color: $white_darker;
   }
+
 
 
 
